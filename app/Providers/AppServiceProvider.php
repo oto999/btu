@@ -23,19 +23,19 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $quizzes = [
-            [
-                'name' => 'Quiz 1',
-                'photo' => 'quiz1.jpg',
-                'status' => 'completed'
-            ],
-            [
-                'name' => 'Quiz 2',
-                'photo' => 'quiz2.jpg',
-                'status' => 'pending'
-            ]
-        ];
+        // $quizzes = [
+        //     [
+        //         'name' => 'Quiz 1',
+        //         'photo' => 'quiz1.jpg',
+        //         'status' => 'completed'
+        //     ],
+        //     [
+        //         'name' => 'Quiz 2',
+        //         'photo' => 'quiz2.jpg',
+        //         'status' => 'pending'
+        //     ]
+        // ];
     
-        view()->share('quizzes', $quizzes);
+        // view()->share('quizzes', $quizzes);
     }
 }
