@@ -40,11 +40,11 @@
         @foreach($quizzes as $quiz)
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="{{ asset('photos/' . $quiz['photo']) }}" class="card-img-top" alt="{{ $quiz['name'] }}">
+                    <img src="{{ asset('photos/' . $quiz->photo) }}" class="card-img-top" alt="{{ $quiz->name }}">
                     <div class="card-body">
-                        <h5 class="card-title">{{ $quiz['name'] }}</h5>
+                        <h5 class="card-title">{{ $quiz->name }}</h5>
                         <p class="card-text">
-                            Status: <span class="{{ $quiz['status'] === 'completed' ? 'text-success' : 'text-warning' }}">{{ $quiz['status'] }}</span>
+                            Status: <span class="{{ $quiz->status === 'completed' ? 'text-success' : 'text-warning' }}">{{ $quiz->status }}</span>
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::post('/subscribe', 'SubscriptionController@subscribe')->name('subscribe');
+
+Route::get('/quizzes', [SubscriptionController::class, 'showQuizzes']);
